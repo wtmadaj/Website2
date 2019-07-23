@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	 <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<ul>
+		<li><a href="Test.html">Home</a></li>
+		<li><a href="About.html">About</a></li>
+		<li><a class="active" href="register.html">Register</a></li>
+		<li style="float:right"><a href="thirdpage.html">Example</a></li>
+	</ul>
+		<header>
+		<h4>WTM</h4>
+		<nav>
+			<a href="Test.html"><button class="button">Home</button></a><br>
+			<a href="About.html"><button class="button">About Me</button></a>
+			<hr>
+		</nav>
+	</header>
+	<h1>Register</h1><br>
+	<!-- Use POST, not GET normally -- otherwise anyone can see what was entered in the address bar -->
+	<form method="GET">
+		First Name: <input type="text" name="firstname" required><br>
+		Last Name: <input type="text" name="lastname" required><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="password" minlength="8" name="password" required><br>
+		Birthdate: <input type="date" name="birthdate"><br>
+		Gender: <br>
+		<input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" valeu="Female">Female
+		<input type="radio" name="gender" value="Other">Other<br>
+		Pets: <br>
+		<input type="checkbox" name="cats">Cats<br>
+		<input type="checkbox" name="dogs">Dogs<br>
+		Primary Vehicle: <br>
+		<select name="Primary Vehicle">
+			<option value="Car" name="Car">Car</option>
+			<option value="Truck" name="Truck">Truck</option>
+			<option value="Van" name="Van">Van</option>
+			<option value="Motorcycle" name="Motorcycle">Motorcycle</option>
+
+		</select><br>
+		<input type="submit" value="Register">
+		<input type="reset">
+	</form>
+
+	<br><br>
+
+</body>
+<footer>
+	<p>&copy WTM 2018</p>
+</footer>
+</html>
